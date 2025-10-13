@@ -1,0 +1,19 @@
+# Using conda for environment
+
+# Create environment
+conda create -n myenv python=3.11 pandas numpy
+
+# Activate environment
+conda activate seenv
+
+# Add packages in active environment
+conda install matplotlib scikit-learn
+# or, for packages only on PyPI:
+pip install seaborn
+
+# Save environment
+conda env export > environment.yml
+conda env create -f environment.yml
+
+# At new login activate again
+conda activate seenv
