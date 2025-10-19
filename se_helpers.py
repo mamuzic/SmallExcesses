@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import pandas as pd
 import os, sys
 from pathlib import Path
@@ -108,6 +110,8 @@ def copy_all_model_slha(slha_dir, excess_all):
         copy_model_slha(slha_dir, modelid)
 
 def main():
+
+    # Extract small excesses
     dirname = "/Users/mamuzic/MyWork/LJUBLJANA/WP2_pMSSMML_SMASH/SmallExcesses"
     bino_csv = "../EWKpMSSM_HepDATA/Bino-DM.csv"
     bino_slha_dir = "../EWKpMSSM_HepDATA/Bino-DM"
