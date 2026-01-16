@@ -25,6 +25,7 @@ def load_scan(dirname, fname):
     return df
 
 def extract_se(dirname,fname):
+    os.makedirs(dirname, exist_ok=True)
     os.chdir(dirname)
     df = load_scan(dirname, fname)
 
